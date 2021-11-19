@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make 10</title>
+</head>
+<body>
+    <form action="/calc" method="post">
+        <div class="numbers">
+        <input placeholder="0" type="number" id="num1" name="num1" min="0" max="9">
+        <input placeholder="0" type="number" id="num2" name="num2" min="0" max="9">
+        <input placeholder="0" type="number" id="num3" name="num3" min="0" max="9">
+        <input placeholder="0" type="number" id="num4" name="num4" min="0" max="9">
+        </div>
+
+        <input placeholder="0" type="submit" value="make 10">
+    </form>
+
+    <h1><%=text%></h1>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .numbers{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        form{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 1rem;
+        }
+        input{
+            margin: 10px 0;
+        }
+        #num1, #num2, #num3, #num4{
+            width: 20%;
+            height: 3rem;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
